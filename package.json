@@ -1,4 +1,5 @@
 {
+  "name": "herogame-countdown",
   "private": true,
   "scripts": {
     "dev": "next dev",
