@@ -2,7 +2,8 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import FlipClockCountdown from '@leenguyen/react-flip-clock-countdown';
 import '@leenguyen/react-flip-clock-countdown/dist/index.css';
-import logo from '../images/testing.png';
+import logo from '../images/logo_trans.png';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -11,16 +12,17 @@ export default function Home() {
         <title>Hero Game Countdown</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      
 
       <main>
-        <img src={logo} />
+        <Image src={logo} width={300} height={300} />
         <h1 className={styles.title}>
           Hero Game 
         </h1>
         <p className={styles.subtitle}>
           Coming soon...
         </p>
-        <FlipClockCountdown  labelStyle={{ fontSize: 16, fontWeight: 500, textTransform: 'uppercase' }} to={new Date().getTime() + 168 * 3600 * 1000} />
+        <FlipClockCountdown  labelStyle={{ fontSize: 16, fontWeight: 500, textTransform: 'uppercase' }} to='2023-03-06T00:00:00.000Z' />
       </main>
 
       <style jsx>{`
