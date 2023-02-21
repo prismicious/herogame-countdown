@@ -1,67 +1,31 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import FlipClockCountdown from '@leenguyen/react-flip-clock-countdown';
+import '@leenguyen/react-flip-clock-countdown/dist/index.css';
+import logo from '../images/testing.png';
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Hero Game Countdown</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
+        <img src={logo} />
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Hero Game 
         </h1>
-
-        <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
+        <p className={styles.subtitle}>
+          Coming soon...
         </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+        <FlipClockCountdown  labelStyle={{ fontSize: 16, fontWeight: 500, textTransform: 'uppercase' }} to={new Date().getTime() + 168 * 3600 * 1000} />
       </main>
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-        </a>
-      </footer>
 
       <style jsx>{`
         main {
+          background: #000000;
           padding: 5rem 0;
           flex: 1;
           display: flex;
@@ -88,7 +52,7 @@ export default function Home() {
           color: inherit;
         }
         code {
-          background: #fafafa;
+          background: #000000;
           border-radius: 5px;
           padding: 0.75rem;
           font-size: 1.1rem;
@@ -100,6 +64,7 @@ export default function Home() {
       <style jsx global>{`
         html,
         body {
+          background: #000000;
           padding: 0;
           margin: 0;
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,

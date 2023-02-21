@@ -18,10 +18,37 @@
   text-decoration: underline;
 }
 
+.logo {
+  height: 10rem;
+  width: 10rem;
+  
+}
+
+@font-face {
+  font-family: 'SadMachine';
+  src: local('SadMachine'), url(../fonts/SadMachine.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Molot';
+  src: local('Molot'), url(../fonts/Molot.otf) format('opentype');
+}
+
 .title {
+  font-family: 'Molot';
   margin: 0 0 1rem;
   line-height: 1.15;
-  font-size: 3.6rem;
+  color: white;
+  font-size: 10rem;
+}
+
+.subtitle {
+  text-align: center;
+  font-family: 'SadMachine';
+  margin: 0 0 1rem;
+  line-height: 1.15;
+  color: white;
+  font-size: 5rem;
 }
 
 .title {

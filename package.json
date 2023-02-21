@@ -6,6 +6,9 @@
     "start": "next start"
   },
   "dependencies": {
+    "@leenguyen/react-flip-clock-countdown": "^1.4.0",
+    "@rumess/react-flip-countdown": "^1.2.6",
+    "flipdown": "^0.3.2",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0"
