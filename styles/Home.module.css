@@ -7,6 +7,10 @@
   align-items: center;
 }
 
+.clock {
+  justify-content: center;
+}
+
 .title a {
   color: #0070f3;
   text-decoration: none;
@@ -36,9 +40,10 @@
 
 .title {
   font-family: 'Molot';
-  margin: 0 0 1rem;
+  margin: 0;
   color: white;
   font-size: 9rem;
+  letter-spacing: 0.2rem;
 }
 
 .subtitle {
@@ -105,8 +110,12 @@
   line-height: 1.5;
 }
 
-.logo {
-  height: 1em;
+
+.flip-clock {
+  --fcc-flip-duration: 5s; /* transition duration when flip card */
+  --fcc-digit-block-width: 40px; /* width of digit card */
+  --fcc-digit-block-height: 60px; /* height of digit card, highly recommend in even number */
+  --fcc-digit-font-size: 100px; /* font size of digit */
 }
 
 @media (max-width: 600px) {
@@ -114,4 +123,18 @@
     width: 100%;
     flex-direction: column;
   }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .subtitle {
+    font-size: 3rem;
+  }
+
+  .clock {
+    font-size: 3rem;
+  }
+
 }
+

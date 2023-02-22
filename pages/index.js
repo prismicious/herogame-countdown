@@ -15,14 +15,14 @@ export default function Home() {
       
 
       <main>
-        <Image src={logo} width={300} height={300} />
+        <Image className='logo' src={logo} width={200} height={200} />
         <h1 className={styles.title}>
           Hero Game 
         </h1>
         <p className={styles.subtitle}>
           Coming soon...
         </p>
-        <FlipClockCountdown  labelStyle={{ fontSize: 16, fontWeight: 500, textTransform: 'uppercase' }} to='2023-03-07T00:00:00.000Z' />
+        <FlipClockCountdown className='flip-clock' labelStyle={{ fontSize: 16, fontWeight: 500, textTransform: 'uppercase'}} digitBlockStyle={{ width: 40, height: 60, fontSize: 30 }} to='2023-03-07T16:00:00.000Z' />
       </main>
 
       <style jsx>{`
