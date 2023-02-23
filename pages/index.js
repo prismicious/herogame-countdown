@@ -22,7 +22,7 @@ export default function Home() {
         <p className={styles.subtitle}>
           Coming soon...
         </p>
-        <FlipClockCountdown className='flip-clock' labelStyle={{ fontSize: 16, fontWeight: 500, textTransform: 'uppercase'}} digitBlockStyle={{ width: 40, height: 60, fontSize: 30 }} to='2023-03-07T16:00:00.000Z' />
+        <FlipClockCountdown className='flip-clock' labelStyle={{ fontSize: 16, fontWeight: 500, textTransform: 'uppercase'}} digitBlockStyle={{ width: 40, height: 60, fontSize: 30 }} to='2023-03-07T19:00:00.000Z' />
       </main>
 
       <style jsx>{`
